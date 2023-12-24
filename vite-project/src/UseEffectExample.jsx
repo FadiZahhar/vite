@@ -6,7 +6,7 @@ export function UseEffectExample() {
     const [users,setUsers] = useState([]);
 
     useEffect(() => {
-
+// using an async method inside the use effect as a best practice
         const fetchData = async() => {
             try{
                 const response = await fetch(url);
